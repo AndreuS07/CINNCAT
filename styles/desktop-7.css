@@ -1,0 +1,58 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 192rem;
+}.desktop-7-xiY {
+  box-sizing: border-box;
+  padding: 0rem 23.1rem 0rem 26.8rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.desktop-7-xiY .inicio-removebg-preview-1-jcp {
+  margin: 0rem 11.6rem 0.2rem 0rem;
+  width: 24.4rem;
+  height: 16.8rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.desktop-7-xiY .shop-removebg-preview-1-1qE {
+  margin-right: 13.7rem;
+  width: 19.5rem;
+  height: 8.6rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.desktop-7-xiY .capturadepantalla2023-12-15160341-removebg-preview-2-8ex {
+  margin: 0.1rem 13rem 0rem 0rem;
+  width: 33.1rem;
+  height: 8.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.desktop-7-xiY .contact-removebg-preview-1-2VS {
+  margin-top: 0.1rem;
+  width: 26.8rem;
+  height: 7.7rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}

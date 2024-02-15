@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CINNCAT MENU</title>
+  
+  <link rel="icon" type="image/x-icon" href="img/icono.ico">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="js/jquery/accordion.js">
+  
+  </script>
+
+<style>
+/* Reset básico para manejar los márgenes y el padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente más profesional */
+    background-color: #1a1a1a; /* Color de fondo oscuro para un cine */
+    color: #ffffff; /* Texto en blanco para contraste */
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    background-color: #333; /* Fondo para cada video */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+    width: calc(60% - 40px); /* Ancho ajustado para dos vídeos por fila con gap */
+    max-width: 390px; /* Máximo ancho para contenedores de video */
+}
+
+video {
+    display: block;
+    width: 100%; /* Hace que el video sea responsivo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados para el video */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Tamaño de fuente más grande para títulos */
+    color: #FFD700; /* Color dorado para títulos, simula ambiente de cine */
+}
+
+.tama {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -5px;
+    font-size: 9ch;
+    font-weight: bolder; /* Tamaño de fuente más grande para el encabezado principal */
+    color: #FFD700; /* Color dorado para encabezado principal */
+    margin-top: -80px; /* Espacio adicional en la parte superior */
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container {
+        width: 100%; /* Los contenedores de video ocupan todo el ancho en pantallas pequeñas */
+    }
+}
+.elegante-btn{
+    margin-left: -45%;
+
+}
+
+.audio-wrapper {
+  position: fixed; /* Esto hará que tu audio flote y se mantenga en una posición fija */
+  right: 40;       /* Esto lo alinea a la derecha de la pantalla */
+  z-index: 500;  
+  margin-top: 40%;/* Esto asegura que el audio esté por encima de otros elementos */
+}
+
+
+
+.gif-container {
+  position: relative;
+  width: 100%; /* Adjust the container width as needed */
+  height: -10px; /* Adjust to fit both GIFs vertically or as required */
+}
+
+.gif-container iframe {
+  transform: scale(0.8); /* Reduce the size to 50% of the original */
+  transform-origin: top left; /* Ensure the scaling doesn't move the iframes out of view */
+}
+
+.gif-container iframe:first-child {
+  position: absolute;
+  top: -10; /* Position at the top of the container */
+  left: 0; /* Position at the left of the container */
+  margin-top: -27%;
+  margin-left: -2%;
+}
+
+.gif-container iframe:last-child {
+  position: absolute;
+  bottom: -10; /* Position at the bottom of the container */
+  right: 0; /* Position at the right of the container */
+  margin-top: -26%;
+  margin-right: -7%;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+    <a href="Cinema.html"><button class="elegante-btn"><img class="botonatras" src="assets/botonatras.png"/></button></a> 
+
+
+    <p class="tama">Trailers</p>
+    <div class="row">
+        <div class="video-container">
+            <h1>HABRÁ MATANZA</h1>
+            <video width="300" height="250" controls>
+                <source src="img/VENOM HABRÁ MATANZA.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h1>EL FRANCOTIRADOR</h1>
+            
+            <video width="300" height="250" controls>
+                <source src="img/El Francotirador.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="video-container">
+            <h1>LA SEÑAL</h1>
+            <video width="300" height="250" controls>
+                <source src="img/La señal.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h1>INTOUCHABLES</h1>
+            <video width="300" height="250" controls>
+                <source src="img/Intouchables.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="audio-wrapper">
+        <audio controls>
+          <source src="img/BIENVENIDA INTRO TIPO PELICULA HD.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="gif-container">
+        <iframe src="https://giphy.com/embed/26AHCgWcYM1xSqMaA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <iframe src="https://giphy.com/embed/3osxYzXXuBSzXZ1Np6" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+
+
+</body>
+
+
+</html>

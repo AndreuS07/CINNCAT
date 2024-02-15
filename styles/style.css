@@ -1,0 +1,186 @@
+/*TITULO LETRAS I LINIA*/
+body{
+    background-color: black;
+ }
+hr{
+    
+    background-color:rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.reco{
+    margin-bottom: 4%;
+    margin-top: 2.1%;
+    margin-left: 13%;
+}
+
+
+  .elegante-btn {
+    padding: 10px 20px;
+    background-color: #172026;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    position: absolute;
+    height: 50px;
+    width: 75px;
+    box-shadow: 0px 2px 5px rgba(57, 57, 57, 0.945);
+  }
+  
+
+
+.botonatras{   
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+  transform: rotate(180deg);
+  margin-top: -29px ;
+  margin-left: -30px;
+}
+
+  .elegante-btn:hover {
+    background-color: #0d2b3e; 
+  }
+  
+
+/*MENU*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    margin-left: 7%;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff3636;
+    color: white;
+    border-color: #ff3636;
+}
+
+
+
+/*TITULO I IMAGENES*/
+
+.tirulo{
+    display: block;
+    text-align: center;
+    font-size: 10ch;
+    font-family: 'EB Garamond';
+    margin-top: 2%;
+    font-weight: bolder;
+    
+    
+}
+
+.minom{
+    color: #ff4e44;
+    font-family: 'Montserrat';
+font-size: 24px;    
+
+    font-weight:bold;
+    margin-bottom: 4%;
+    margin-top: -4.6%;
+    text-align: center;
+}
+
+.linia{
+    margin-left: -0.3%;
+    margin-top: -2.5%;
+    margin-bottom: 3%;
+    background-color: white;
+}
+
+section{
+    display: flex;
+    width: 1870px;
+    height: 700px;
+    margin-left: 1.1%;
+    
+    margin-top: 0.6%;
+
+}
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    margin-right: 20px;
+
+}
+
+section img:hover{
+    width: 300px;
+    
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#copyright{
+    font-weight: bolder;
+    font-size: 2ch;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    padding: 3%;
+    margin-top: 10%;
+}
+
+/*BOTON PARA IR A LA PAGINA PRINCIPAL*/
+button {
+    background: linear-gradient(to bottom, #fff, #ddd); /* White gradient */
+    color: #333; /* Dark text on white background */
+    padding: 12px 24px;
+    border: 2px solid #ccc; /* Subtle border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #eee, #ccc); /* Slightly lighter gradient on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+    color: #111; /* Darken the text on hover */
+}
+
+button:active {
+    background: linear-gradient(to bottom, #ccc, #aaa); /* Even lighter gradient when clicked */
+    box-shadow: none; /* Remove box shadow when clicked */
+    color: #000; /* Further darken the text when clicked */
+}
+
+
+.infopelicula{
+    margin-top: -5%;
+}
+
+

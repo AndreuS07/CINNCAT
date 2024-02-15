@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>CINNCAT</title>
+  <link rel="icon" type="image/x-icon" href="img/icono.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/typeit"></script>
+  <script src="js/jquery/typeit.js"></script>
+<style>
+html, body {
+    height: 100%;
+    
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p{
+    color: black;
+    font-size: 2vh;
+}
+
+.no-cursor {
+    cursor: none;
+}
+
+#textContainer{
+    color: black;
+    font-size: 3.5vh;
+    font-weight: bolder;
+}
+#txt2 {
+    display: none; 
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+#backToMainButton {
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: rgb(124, 124, 124);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+   
+}
+
+#backToMainButton:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+</style>
+
+</head>
+<body>
+    <div id="txt">
+        <p id="textContainer" class="no-cursor">Pedimos disculpas por las molestias. Estamos en mantenimiento para actualizar nuestras películas.</p>
+
+        <p id="txt2">
+        Estamos trabajando para mejorar tu experiencia y traerte los últimos estrenos y clásicos del cine.
+        
+        Esperamos volver muy pronto, con un catálogo actualizado y listo para tu disfrute. ¡Gracias por tu paciencia!
+        
+        Estimamos que el mantenimiento concluirá en las próximas 48 horas.</p>
+
+        <a href="Cinema.html">
+            <span id="backToMainButton" style="display: none; margin-top: 10px;">Volver</span>
+        </a>
+        
+    </div>
+
+
+</body>
+</html>

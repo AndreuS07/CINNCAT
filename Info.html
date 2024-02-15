@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Movie Details</title>
+    <link rel="icon" type="image/jpg" href="img/icono2.png"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair%20Display' rel='stylesheet'>
+    <style>
+       body{
+        background: linear-gradient(to bottom, #000000, #303030);
+color: white;
+       }
+       h2, p{
+        
+        margin-left: 27%;
+        margin-top: 2%;
+        
+       }
+
+       h2{
+        font-size: 5.2ch;
+        margin-top: -30%;}
+        p{
+            font-size: 2.5ch;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Go Back Button -->
+        <button onclick="redirectToPage()">ATRÁS</button>    </div>
+        <h1>Información de Película</h1>
+        <div id="infoPelicula">
+            <!-- Aquí se mostrará la información de la película seleccionada -->
+        </div>
+
+
+
+
+    <footer>
+
+        <div id="copyright">
+            &copy; 2023 Andreu Vicent Faubel Soligò. Todos los derechos reservados.
+            <br>
+            CREATIVE COMMONS
+        </div>
+    </footer>
+
+    <script>
+        function redirectToPage() {
+            // Replace 'target-page.html' with the actual page you want to redirect to
+            window.location.href = 'Peliculas.html';
+        }
+
+
+// Recupera la información de la película desde localStorage
+var peliculaSeleccionada = JSON.parse(localStorage.getItem('peliculaSeleccionada'));
+
+// Muestra la información en el div
+var infoPelicula = document.getElementById('infoPelicula');
+infoPelicula.innerHTML = `
+<img src="${peliculaSeleccionada.imagen}" width="400"></img>
+    <h2>${peliculaSeleccionada.titulo}</h2>
+    <p><b>Duración:</b>  ${peliculaSeleccionada.duracion}</p>
+    <p><b>Categoría:</b>  ${peliculaSeleccionada.categoria}</p>
+    <p><b>Año de Estreno:</b>  ${peliculaSeleccionada.anioEstreno}</p>
+    <p><b>Limitación de Edad:</b> ${peliculaSeleccionada.limitacionEdad}</p>
+    <p class="ultima"><b>Sinopsis:</b><br><br> ${peliculaSeleccionada.descripcion}</p>
+`;
+
+    </script>
+</body>
+
+</html>
+

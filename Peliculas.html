@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PELICULAS</title>
+    <link rel="icon" type="image/x-icon" href="img/ICONO.png">
+    <link rel="icon" type="image/jpg" href="img/icono2.png"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        p{
+            font-size: 3ch;
+            font-weight: bolder;
+            margin-left: 36%;
+        }
+       .licen{
+        
+        color: white;
+       }
+    </style>
+    <script>
+        $(document).ready(function() {
+            // Hace que el banner aparezca con un efecto de difuminado
+            $("#offerBanner").fadeIn(1000).delay(2000).fadeOut(1000);
+        });
+        </script>
+        
+        
+</head>
+<header> 
+    <a href="Cinema.html"><button class="elegante-btn"><img class="botonatras" src="assets/botonatras.png"/></button></a> 
+
+    <img  class="reco" src="img/Captura_de_pantalla_2023-12-14_155816-removebg-preview.png"/>
+    
+    <hr class="linia" width="100.5%" size="7" >
+
+</header>
+
+<body>
+
+    <div id="offerBanner" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40%; height: 30%; background-color: red; color: white; text-align: center; padding: 20px; font-size: 25px; font-weight: bolder; z-index: 1000; align-items: center; justify-content: center; border-radius: 30px;">
+        ¡Oferta Especial por Tiempo Limitado!
+        <img src="img/oferta.png" style="height: 45vh; margin-top: 20px;"/>
+    </div>
+    
+    
+    
+    
+    <section id="movies">
+    
+        <img src="img/nowhere.jpg" alt="" onclick="mostrarInformacion(0)">
+    <img src="img/senal.jpg" alt=""  onclick="mostrarInformacion(1)">
+    <img src="img/venom2.jpg" alt=""  onclick="mostrarInformacion(2)">
+    <img src="img/dune.jpg" alt=""  onclick="mostrarInformacion(3)">
+    <img src="img/exodo.jpg" alt=""  onclick="mostrarInformacion(4)">
+    <img src="img/culpable.jpg" alt=""  onclick="mostrarInformacion(5)">
+    <img src="img/swallow.jpg" alt=""  onclick="mostrarInformacion(6)">
+
+</section>
+
+<br><br>
+
+<section id="movies">
+    <img src="img/hermana.jpg" alt="" onclick="mostrarInformacion(7)">
+    <img src="img/guerra.jpg" alt="" onclick="mostrarInformacion(8)">
+    <img src="img/culpa.jpg" alt="" onclick="mostrarInformacion(9)">
+    <img src="img/banco.jpg" alt="" onclick="mostrarInformacion(10)">
+    <img src="img/pacto.jpg" alt="" onclick="mostrarInformacion(11)">
+    <img src="img/vast.jpg" alt="" onclick="mostrarInformacion(12)">
+    
+
+</section>
+
+<br><br>
+
+<section id="movies">
+    <img src="img/intocable.jpg" alt="" onclick="mostrarInformacion(13)">
+    
+    <img src="img/umma.jpg" alt="" onclick="mostrarInformacion(14)">
+    <img src="img/francotirador.jpg" alt="" onclick="mostrarInformacion(15)">
+    <img src="img/hostil.jpg" alt="" onclick="mostrarInformacion(16)">
+    <img src="img/pulp.jpg" alt="" onclick="mostrarInformacion(17)">
+   
+    <img src="img/archive.jpg" alt="" onclick="mostrarInformacion(18)">
+    <img src="img/lupin.jpg" alt="" onclick="mostrarInformacion(19)">
+    
+
+</section>
+<br><br>
+<footer> <p class="licen" xmlns:cc="http://creativecommons.org/ns#" >Licencia de CINNCAT <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:27px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:27px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:27px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:27px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+    <!--
+    <div id="copyright">
+        &copy; 2023 Andreu Vicent Faubel Soligò. Todos los derechos reservados.
+        <br>
+        CREATIVE COMMONS
+    </div>-->
+</footer>
+
+
+
+<script>
+
+
+        var peliculas = [
+            {
+                id: 1,
+                imagen: "img/nowhere.jpg",
+                titulo: "NOWHERE",
+                duracion: "1h 49min",
+                categoria: "Suspense/Drama",
+                anioEstreno: 2023,
+                limitacionEdad: 12,
+                descripcion: "Mia, una joven embarazada, escapa de un país en guerra escondiéndose en un contenedor marítimo a bordo de un carguero. Tras una violenta tormenta, Mia da a luz mientras está perdida en el mar, donde debe luchar por sobrevivir."
+            },
+            {
+                id: 2,
+                imagen: "img/senal.jpg",
+                titulo: "LA SEÑAL",
+                duracion: "1h 37min",
+                categoria: "Ciencia ficción/Suspense",
+                anioEstreno: 2014,
+                limitacionEdad: 15,
+                descripcion: "Tres amigos viajan a California cuando reciben una señal de un hacker que ha conseguido meterse en los servidores del MIT. Por el camino deciden desviarse de su ruta e investigar el origen de la transmisión, que les lleva a un caserón abandonado en medio del desierto de Nevada."
+            },
+            {
+                id: 3,
+                imagen: "img/venom2.jpg",
+                titulo: "VENOM",
+                duracion: "1h 37min",
+                categoria: "Acción/Ciencia ficción ",
+                anioEstreno: 2021,
+                limitacionEdad: 16,
+                descripcion: "Después de encontrar un cuerpo anfitrión en el periodista de investigación Eddie Brock, el simbionte alienígena debe enfrentarse a un nuevo enemigo, Carnage, el alter ego del asesino en serie Cletus Kasady."
+            },
+            {
+                id: 4,
+                imagen: "img/dune.jpg",
+                titulo: "DUNE",
+                duracion: "3h 35min",
+                categoria: "Ciencia ficción/Aventura",
+                anioEstreno: 2021,
+                limitacionEdad: 16,
+                descripcion: "Arrakis, también denominado 'Dune', se ha convertido en el planeta más importante del universo. A su alrededor comienza una gigantesca lucha por el poder que culmina en una guerra interestelar."
+            },
+            {
+                id: 5,
+                imagen: "img/exodo.jpg",
+                titulo: "ÉXODO",
+                duracion: "1h 30min",
+                categoria: "Thriller",
+                anioEstreno: 2021,
+                limitacionEdad: 10,
+                descripcion: "La historia encuentra al Planeta Tierra como un lugar que se vuelve inhabitable para la raza humana, lo que lleva a la élite gobernante a buscar refugio en el Planeta Kepler 209. Al llegar, no todo es bueno, pronto se dan cuenta que la atmósfera de este planeta vuelve estériles a los nuevos habitantes."
+            },
+            {
+                id: 6,
+                imagen: "img/culpable.jpg",
+                titulo: "CULPABLE",
+                duracion: "1h 30min",
+                categoria: "Thriller",
+                anioEstreno: 2021,
+                limitacionEdad: 17,
+                descripcion: "En el transcurso de una jornada en una central de emergencias del 911, el operador Joe Bayler (Gyllenhaal) intenta salvar de un grave peligro a una mujer que ha llamado."
+            },
+            {
+                id: 7,
+                imagen: "img/swallow.jpg",
+                titulo: "SWALLOW",
+                duracion: "1h 35min",
+                categoria: "Terror/Drama",
+                anioEstreno: 2019,
+                limitacionEdad: 14,
+                descripcion: "Hunter es una ama de casa recién embarazada que desarrolla la necesidad de consumir objetos peligrosos para su salud. Al mismo tiempo que intenta escapar del control de la familia de su marido, deberá confrontar el oscuro secreto que hay detrás de su obsesión."
+            },
+            {
+                id: 8,
+                imagen: "img/hermana.jpg",
+                titulo: "HERMANA MUERTE",
+                duracion: "1h 30min",
+                categoria: "Terror/Misterio",
+                anioEstreno: 2023,
+                limitacionEdad: 18,
+                descripcion: "En la España de la posguerra, Narcisa (Aria Bedmar), una joven novicia con poderes sobrenaturales, empieza a trabajar de profesora en un antiguo convento, ahora colegio para niñas. Conforme pasen los días, los extraños sucesos y las situaciones cada vez más inquietantes que la atormentan terminarán por llevarla a desenredar la madeja de secretos que rodean al convento y acechan a sus moradoras."
+            },
+            {
+                id: 9,
+                imagen: "img/guerra.jpg",
+                titulo: "ESTO ES LA GUERRA",
+                duracion: "1h 38min",
+                categoria: "Comedia/Acción",
+                anioEstreno: 2012,
+                limitacionEdad: 14,
+                descripcion: "Dos agentes de la CIA (Chris Pine y Tom Hardy), grandes amigos desde la infancia, se enamoran de la misma mujer (Reese Witherspoon). Su amistad desaparece y se enzarzan en una batalla de proporciones épicas que pondrá en jaque a la ciudad de Nueva York."
+            },
+            {
+                id: 10,
+                imagen: "img/culpa.jpg",
+                titulo: "CULPA MÍA",
+                duracion: "1h 57min",
+                categoria: "Romance/Drama",
+                anioEstreno: 2023,
+                limitacionEdad: 15,
+                descripcion: "Noah debe dejar su ciudad, novio y amigos para mudarse a la mansión del nuevo marido de su madre. Allí conoce a su nuevo hermanastro Nick y sus personalidades chocan desde el primer momento. Pero la atracción que sienten les llevará a vivir una relación prohibida, donde el carácter rebelde y atormentado de cada uno de ellos pondrá del revés sus mundos haciendo que acaben perdidamente enamorados. Adaptación del primer libro de la trilogía 'Culpables' de Mercedes Ron."
+            },
+            {
+                id: 11,
+                imagen: "img/banco.jpg",
+                titulo: "EL BANQUERO",
+                duracion: "2h 0min",
+                categoria: "Drama",
+                anioEstreno: 2020,
+                limitacionEdad: 14,
+                descripcion: "En los años 60, dos emprendedores (Anthony Mackie y Samuel L. Jackson) traman un ingenioso plan para conseguir acceso igualitario al sueño americano. Nicholas Hoult y Nia Long coprotagonizan este drama inspirado en hechos reales."
+            },
+            {
+                id: 12,
+                imagen: "img/pacto.jpg",
+                titulo: "EL PACTO",
+                duracion: "2h 3min",
+                categoria: "Acción",
+                anioEstreno: 2023,
+                limitacionEdad: 18,
+                descripcion: "En su último período de servicio en Afganistán, el sargento John Kinley incorpora al intérprete local Ahmed para que sea su traductor en la región. Cuando su unidad sufre una emboscada, Kinley y Ahmed son los únicos supervivientes. Con los enemigos persiguiéndoles, Ahmed arriesga su propia vida para intentar llevar a Kinley herido a través de kilómetros de terreno agotador a un lugar seguro."
+            },
+            {
+                id: 13,
+                imagen: "img/vast.jpg",
+                titulo: "THE VAST OF NIGHT",
+                duracion: "1h 31min",
+                categoria: "Drama",
+                anioEstreno: 2019,
+                limitacionEdad: 14,
+                descripcion: "En los años 50, en la pequeña poblacion de Cayuga, Nuevo México, la joven operadora de radio Fay Crocker (Sierra McCormick) y el carismático locutor local Everett Sloan (Jake Horowitz) descubren una misteriosa frecuencia de radio que podría cambiar su vida y la de toda la humanidad para siempre."
+            },
+            {
+                id: 14,
+                imagen: "img/intocable.jpg",
+                titulo: "INTOUCHABLES",
+                duracion: "1h 49min",
+                categoria: "Comedia/Drama",
+                anioEstreno: 2011,
+                limitacionEdad: 11,
+                descripcion: "Philippe, un aristócrata millonario que se ha quedado tetrapléjico a causa de un accidente de parapente, contrata como cuidador a domicilio a Driss, un inmigrante de un barrio marginal recién salido de la cárcel. Aunque, a primera vista, no parece la persona más indicada, los dos acaban logrando que convivan Vivaldi y Earth Wind and Fire, la elocuencia y la hilaridad, los trajes de etiqueta y el chándal. Dos mundos enfrentados que, poco a poco, congenian hasta forjar una amistad tan disparatada, divertida y sólida como inesperada, una relación única en su especie de la que saltan chispas."
+            },
+            {
+                id: 15,
+                imagen: "img/umma.jpg",
+                titulo: "UMMA",
+                duracion: "1h 23min",
+                categoria: "Terror",
+                anioEstreno: 2020,
+                limitacionEdad: 18,
+                descripcion: "Amanda y su hija viven una vida tranquila en una granja estadounidense, pero cuando los restos de su madre separada llegan de Corea, Amanda se ve obsesionada por el temor de convertirse en su propia madre."
+            },
+            {
+                id: 16,
+                imagen: "img/francotirador.jpg",
+                titulo: "EL FRANCOTIRADOR",
+                duracion: "2h 12min",
+                categoria: "Bélico/Drama",
+                anioEstreno: 2014,
+                limitacionEdad: 19,
+                descripcion: "Autobiografía del marine SEAL Chris Kyle, un tejano que batió el récord de muertes como francotirador del ejército norteamericano. Kyle fue enviado a Irak con la misión de proteger a sus compañeros. Su puntería y precisión milimétrica salvó incontables vidas en el campo de batalla, por lo que se ganó el apodo de “Leyenda”, pero la noticia de sus hazañas llegó hasta las filas enemigas. Se puso precio a su cabeza y se convirtió en objetivo de los insurgentes. En Irak, Chris participó en cuatro peligrosas misiones, aplicando el principal lema de los marines: “no dejar a ningún hombre atrás”, mientras en casa le esperaban su mujer Taya (Sienna Miller) y sus dos hijos pequeños."
+            },
+            {
+                id: 17,
+                imagen: "img/hostil.jpg",
+                titulo: "EN TIERRA HOSTIL",
+                duracion: "2h 5min",
+                categoria: "Bélico/Acción",
+                anioEstreno: 2008,
+                limitacionEdad: 16,
+                descripcion: "En Irak, una unidad de élite de artificieros norteamericanos actúa en una caótica ciudad donde cualquier persona puede ser un enemigo y cualquier objeto, una bomba. El jefe del grupo, el sargento Thompson, muere en el transcurso de una misión y es sustituido por el impredecible y temerario sargento William James (Jeremy Renner). Cuando falta poco para que la brigada sea relevada, el imprudente comportamiento de James hará que dos de sus subordinados, se planteen seriamente el riesgo que corren."
+            },
+            {
+                id: 18,
+                imagen: "img/pulp.jpg",
+                titulo: "PULP FICTION",
+                duracion: "2h 33min",
+                categoria: "Thriller",
+                anioEstreno: 1994,
+                limitacionEdad: 19,
+                descripcion: "Jules y Vincent, dos asesinos a sueldo con no demasiadas luces, trabajan para el gángster Marsellus Wallace. Vincent le confiesa a Jules que Marsellus le ha pedido que cuide de Mia, su atractiva mujer. Jules le recomienda prudencia porque es muy peligroso sobrepasarse con la novia del jefe. Cuando llega la hora de trabajar, ambos deben ponerse 'manos a la obra'. Su misión: recuperar un misterioso maletín. "
+            },
+            {
+                id: 19,
+                imagen: "img/archive.jpg",
+                titulo: "EL ARCHIVO",
+                duracion: "2h 0min",
+                categoria: "Ciencia ficción",
+                anioEstreno: 2020,
+                limitacionEdad: 13,
+                descripcion: "Año 2038: George Almore trabaja en una inteligencia artificial que parezca verdaderamente humana. Su último prototipo ya está en su fase más delicada y arriesgada, en especial, porque el objetivo de Almore debe permanecer oculto a cualquier precio: reunirse con su mujer fallecida."
+            },
+            {
+                id: 20,
+                imagen: "img/lupin.jpg",
+                titulo: "LUPIN",
+                duracion: "1h 45min",
+                categoria: "Drama/Acción",
+                anioEstreno: 2021,
+                limitacionEdad: 12,
+                descripcion: "Assane Diop (Omar Sy) es un escurridizo ladrón de guante blanco y aficionado a las aventuras de Arsene Lupin que busca vengar la muerte de su padre a causa del poderoso patriarca de una rica familia. Años después de una trágica injusticia, Assane se propone ajustar cuentas -y una deuda- robando un collar de diamantes, pero las cosas no salen según lo previsto."
+            },
+       
+        ];
+
+        function mostrarInformacion(index) {
+            var pelicula = peliculas[index];
+
+            // Almacena la información de la película en localStorage
+            localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+
+            // Redirige a la página 'Info.html'
+            window.location.href = 'Info.html';
+        }
+
+</script>
+</body>
+</html>

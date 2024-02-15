@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>CINNCAT</title>
+  <link rel="icon" type="image/x-icon" href="img/icono.ico">
+
+  <!--Estilos cinema-->
+  <link rel="stylesheet" href="./styles/cinema.css"/>
+
+  <!--Estilos restaurante-->
+  <link rel="stylesheet" href="./styles/restaurant.css"/>
+  <link rel="stylesheet" href="./styles/slider.css"/>
+  <script src="java.js"></script>
+
+<!--Estilos recomendaciones-->
+  <link rel="stylesheet" href="./styles/news.css"/>
+
+  <script src="js/ajax/script.js"></script>
+<style>
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 3s ease;
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+  <div class="slider">
+<!--Este es el codigo de la pantalla RESTAURANT-->
+<div class="slide" id="slide1">
+<div class="restaurant-qJL" >
+  <img class="captura-de-pantalla-2023-12-13-192854-6-9K2" src="./assets/captura-de-pantalla-2023-12-13-192854-6.png" alt="Titulo principal de marca"/>
+  <div class="auto-group-ttag-rDS">
+    <div class="auto-group-dzdj-yor">
+      <img class="captura-de-pantalla-2023-12-13-1928541-1-iWY" src="./assets/captura-de-pantalla-2023-12-13-1928541-1.png" alt="Tutilo de la marca Cinncat"/>
+      <img class="disparo-vertical-deliciosa-pizza-sobre-superficie-negra-removebg-2-SBe" src="./assets/disparo-vertical-deliciosa-pizza-sobre-superficie-negra-removebg-2.png" alt="Pizza caprizosa bonita"/>
+      <img class="captura-de-pantalla-2023-12-13-1928541-2-YkU" src="./assets/captura-de-pantalla-2023-12-13-1928541-2-W1r.png" alt="Titulito de CINNCAT bonito"/>
+    </div>
+    <div class="auto-group-yy92-3SL">
+      <a href="Tienda.html">
+      <img class="polygon-2-AWx" src="./assets/polygon-2.png" alt="Flecha para dirigir pagina"/></a>
+      <img class="capturadepantalla2023-12-14155701-removebg-preview-1-J7N" src="./assets/capturadepantalla2023-12-14155701-removebg-preview-1.png" alt="Titulo de restaurante"/>
+    </div>
+  </div>
+  <div class="auto-group-nfp8-ctk">
+    <a href="Menu.html">
+    <img class="group-1-mWk" src="./assets/group-1.png" alt="Imagen de menu con tres rayas"/></a>
+    
+      <a href="#" onclick="currentSlide(2)">
+    <img class="vector-tLU" src="./assets/vector-Qj6.png" alt="Flecha drecha para ir a la derecha"/></a>
+  </div>
+</div>
+
+<!--Final de la pantalla RESTAURANT-->
+</div>
+
+<!--Este es el codigo de la pantalla CINEMA-->
+<div class="slide" id="slide2">
+<div class="cinema-RDN" >
+    <img class="tastypopcornsinawhiteandredstripscupisolated-3-removebg-preview-1-L5S" src="./assets/tastypopcornsinawhiteandredstripscupisolated-3-removebg-preview-1.png" alt="Fotografia de palomitas blancas"/>
+    <img class="captura-de-pantalla-2023-12-13-1928541-2-Brk" src="./assets/captura-de-pantalla-2023-12-13-1928541-2.png" alt="Cartell de Cine principal"/>
+    <img class="captura-de-pantalla-2023-12-13-192854-4-JgU" src="./assets/captura-de-pantalla-2023-12-13-192854-4.png" alt="Cartell de Cinncat"/>
+    <img class="captura-de-pantalla-2023-12-13-204739-2-pep" src="./assets/captura-de-pantalla-2023-12-13-204739-2.png" alt="Fons de la segona diapositiva"/>
+    <img class="tastypopcornsinawhiteandredstripscupisolated-3-removebg-preview-2-9SC" src="./assets/tastypopcornsinawhiteandredstripscupisolated-3-removebg-preview-2.png" alt="Palomitas blancas"/>
+    <img class="captura-de-pantalla-2023-12-13-1928541-3-edr" src="./assets/captura-de-pantalla-2023-12-13-1928541-3.png" alt="Cartell de color blanc"/>
+    <img class="captura-de-pantalla-2023-12-13-192854-5-yg8" src="./assets/captura-de-pantalla-2023-12-13-192854-5.png" alt="Cartell amb fons negre"/>
+    
+    <a href="Estreno.html">
+    <img class="polygon-2-VPa" src="./assets/polygon-2-9QG.png" alt="Flecha hacia abajo blanca"/></a>
+    <img class="capturadepantalla2023-12-14155613-removebg-preview-1-dEt" src="./assets/capturadepantalla2023-12-14155613-removebg-preview-1.png" alt="Titol de Cinema blanc"/>
+    <a href="#" onclick="currentSlide(1)">
+    <img class="vector-Luz" src="./assets/vector.png" alt="Flecha izquierda blanca"/></a>
+    
+    <a href="#" onclick="currentSlide(3)">
+    <img class="vector-5cg" src="./assets/vector-1QQ.png" alt="Flecha de color rojo hacia la derecha"/></a>
+
+
+    <a href="Menu.html">
+      <img class="group-1-RAk" src="./assets/group-1.png" alt="Menu blnaco con tres circulos"/>
+
+
+    <div class="group-1-RAk">
+      <div class="rectangle-1-vdJ">
+      </div>
+      <div class="rectangle-2-4zQ">
+      </div>
+      <div class="rectangle-3-Ra4">
+      </div>
+    </div></a>
+
+
+</div>
+
+<!--Final de la pantalla CINEMA-->  
+</div>
+
+  
+<!--Este es el codigo de la pantalla NEWS-->
+<div class="slide" id="slide3">
+<div class="news-YEp" >
+  
+  <a href="Menu.html">
+    <img class="group-1-F9E"/>
+  <div class="group-1-F9E">
+    <div class="rectangle-1-YGk">
+    </div>
+    <div class="rectangle-2-roE">
+    </div>
+    <div class="rectangle-3-oyN">
+    </div>
+  </div>
+</a>
+
+  <img class="captura-de-pantalla-2023-12-13-192854-5-LCc" src="./assets/captura-de-pantalla-2023-12-13-192854-5-6zQ.png" alt="Fondo CINNCAT"/>
+  <div class="auto-group-55qn-Rjr">
+      
+      <a href="#" onclick="currentSlide(2)">
+    <img class="vector-M7i" src="./assets/vector-dn4.png" alt="Flecha blanca derecha"/></a>
+    <div class="auto-group-vzkx-4Xv">
+      <img class="removebg-preview-1-D9v" src="./assets/removebg-preview-1.png" alt="Microfono de fondo"/>
+      <img class="captura-de-pantalla-2023-12-13-1928541-4-XAc" src="./assets/captura-de-pantalla-2023-12-13-1928541-4.png" alt="Fotografia de Cinncat"/>
+    </div>
+  </div>
+  <div class="auto-group-g6kt-S2g">
+      <a href="Peliculas.html">
+    <img class="polygon-3-MvL" src="./assets/polygon-3.png" alt="Fotografia de una flecha"/></a>
+    <img class="capturadepantalla2023-12-14155816-removebg-preview-1-G1i" src="./assets/capturadepantalla2023-12-14155816-removebg-preview-1.png" alt="Titulo de recomendaciones"/>
+  </div>
+</div>
+</div>
+
+<!--Final de la pantalla recomendaciones-->
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CINNCAT MENU</title>
+  
+  <link rel="icon" type="image/x-icon" href="img/icono.ico">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="js/jquery/accordion.js">
+  
+  </script>
+<style>
+html{
+  background-image: url(img/cine.jpg);
+  background-position: center center; /* Centra la imagen en la pantalla */
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla, manteniendo sus proporciones */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 140%; /* Asegura que el elemento (en este caso el <body>) tenga la altura completa de la pantalla */
+  margin: 0;
+}
+
+    #accordion {
+      display: flex;
+      flex-direction:column; 
+      /* Mantiene los encabezados en la parte superior y el contenido debajo */
+    }
+  
+    #accordion h3 {
+      margin: 0; /* Evita desplazamientos */
+      background-color: #d8d8d8; /* Gris oscuro para los títulos */
+      color: white; /* Texto blanco para contraste */
+      padding: 10px 15px; /* Espaciado interno adecuado */
+      border:#333; /* Sin bordes */
+      cursor: pointer; /* Cursor tipo puntero para indicar interactividad */
+      font-size: 16px; /* Tamaño de fuente legible */
+      user-select: none; /* Evita la selección del texto */
+      text-align: center; /* Centra el texto dentro de los encabezados */
+     
+    }
+  
+    #accordion .ui-accordion-content {
+      display: none; /* Oculta el contenido inicialmente */
+      padding: 20px; /* Espaciado interno para el contenido */
+      background-color: #7d7d7d; /* Gris claro para el fondo del contenido */
+      border-top: 2px solid rgb(16, 15, 15); /* Borde superior oscuro para definición */
+      
+    }
+
+    .fancy-button, .fancy-button1 {
+    background-color: #353535; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Tipo de display */
+    font-size: 27px; /* Aumentamos el tamaño del texto para hacer la flecha más grande */
+    margin: 4px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cambia el cursor a tipo puntero */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+    user-select: none; /* Evita que el texto del botón sea seleccionable */
+  }
+  
+  .fancy-button:hover {
+    background-color: #1f1f1f; /* Color de fondo al pasar el mouse */
+  }
+
+  .fancy-button1:hover {
+    background-color: #1f1f1f; /* Color de fondo al pasar el mouse */
+  }
+  .fancy-button:active {
+    transform: scale(0.98); /* Efecto de "presionado" al hacer clic */
+  }
+
+  .fancy-button1:active {
+    transform: scale(0.98); /* Efecto de "presionado" al hacer clic */
+  }
+
+
+#medio{
+  font-size: 2ch;
+  margin-left: 10%;
+      margin-right: 10%;
+    background-color: rgba(255, 255, 255, 0.545);
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.fancy-button1{
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+
+.center-grid {
+    margin-left: 32%;
+    margin-right: 50%;
+  }
+
+ 
+
+  </style>
+  
+  
+  
+</head>
+<body>
+ 
+<div id="accordion">
+  <a href="Cinema.html">
+ <h3><img class="inicio-removebg-preview-1-jcp" src="./assets/inicio-removebg-preview-1.png" style="height:100px; width:150px; margin-right: 8px; " alt="Fotografia de algo"/></h3>
+ <div id="medio"></a>
+ 
+</div>
+
+
+<h3 style="font-size: 4.2ch; font-weight: bolder; color: black; padding-bottom: 25px;">TRAILERS</a></h3>
+  <div id="medio">
+    <p>
+Trailers de proximas peliculas   </p>
+
+    <a href="Trailers.html">
+    <button class="fancy-button" >
+      Ir a verlos➔ <!-- Carácter Unicode para una flecha más grande -->
+    </button></a><p></p></br>
+    
+    
+
+  </div>
+
+
+<h3><img class="shop-removebg-preview-1-1qE" src="./assets/shop-removebg-preview-1.png" style="height:55px; width:120px; margin-right: 8px;"/></a></h3>
+  <div id="medio">
+    <p>
+      ¡Bienvenido a nuestra tienda, el paraíso de los amantes de la comida y el cine! Aquí, en nuestro rincón gourmet, combinamos la magia del cine con el placer de comer. Imagina disfrutar de tu película favorita mientras saboreas una pizza artesanal, crujiente y cargada de tus ingredientes preferidos, o mientras te deleitas con nuestras variadas chuches, perfectas para cada momento del film. No olvides refrescarte con nuestra selección de bebidas, desde clásicos refrescos hasta opciones más saludables, diseñadas para acompañarte en cada escena.
+    </p>
+
+    <a href="Tienda.html">
+    <button class="fancy-button" >
+      Ir a la tienda ➔ <!-- Carácter Unicode para una flecha más grande -->
+    </button></a><p></p></br>
+    
+    
+
+  </div>
+  <h3><img class="capturadepantalla2023-12-15160341-removebg-preview-2-8ex" src="./assets/capturadepantalla2023-12-15160341-removebg-preview-2.png" style="height:65px; width:180px; margin-right: 8px;"/></a></h3>
+  <div id="medio">
+    <p>
+      Bienvenidos a CINNCAT, la evolución del cine en 2024. No solo ofrecemos proyecciones de películas de última generación; somos una experiencia completa que combina el arte cinematográfico con una gastronomía exquisita.</br> </br>En CINNCAT, disfrutarás de tu película favorita mientras te deleitas con platillos gourmet, directamente en tu asiento.
+
+    </br></br>Nuestras Instalaciones
+      
+      Situados en el corazón de la ciudad, contamos con salas modernas y un ambiente único diseñado para los amantes del cine y la comida. Nuestro menú varía desde snacks hasta cenas completas, preparadas al momento por chefs de primera.
+      
+    </br></br>Servicios Destacados
+      
+          Pedidos de Comida: Haz tu pedido online o por teléfono y encuentra todo listo al llegar.
+          Recomendaciones Personalizadas: Explora nuevas películas con sugerencias hechas a medida para ti.
+      
+        </br></br></br><img class="center-grid" src="img/icono.ico" style="text-align: center;"></br></br>
+    </p>
+  </div>
+
+  <h3><img class="contact-removebg-preview-1-2VS" src="./assets/contact-removebg-preview-1.png" style="height:50px; width:150px; margin-right: 8px;"/></a></h3>
+  <div id="medio"></br>
+    <p>
+    <b>Telefono: </b>+34 647 234 098</br></br>
+    <b>Email: </b>cinncat@gmail.com</br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25385.11194760247!2d-122.04488576077244!3d37.315535161190176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1707257756882!5m2!1ses!2ses" width="500" height="350" style="border:0; margin-left: 50%; margin-top: -5%;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </p>
+    
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
+
+
+
+
+
+
